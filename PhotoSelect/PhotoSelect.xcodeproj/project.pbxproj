@@ -13,6 +13,8 @@
 		C33CD53720198C4200BAD39E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD53620198C4200BAD39E /* main.m */; };
 		C33CD54120198C4200BAD39E /* PhotoSelectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD54020198C4200BAD39E /* PhotoSelectTests.m */; };
 		C33CD54C20198C4200BAD39E /* PhotoSelectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD54B20198C4200BAD39E /* PhotoSelectUITests.m */; };
+		C33CD56120198E7700BAD39E /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD55E20198E7700BAD39E /* UINavigationBar+BackgroundColor.m */; };
+		C33CD56220198E7700BAD39E /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD55F20198E7700BAD39E /* UIImage+ImageWithColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,12 @@
 		C33CD54720198C4200BAD39E /* PhotoSelectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSelectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33CD54B20198C4200BAD39E /* PhotoSelectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectUITests.m; sourceTree = "<group>"; };
 		C33CD54D20198C4200BAD39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33CD55D20198E7700BAD39E /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		C33CD55E20198E7700BAD39E /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
+		C33CD55F20198E7700BAD39E /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		C33CD56020198E7700BAD39E /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
+		C33CD56320198EE400BAD39E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C33CD56420198F0600BAD39E /* demo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +105,13 @@
 		C33CD52620198C4200BAD39E /* PhotoSelect */ = {
 			isa = PBXGroup;
 			children = (
+				C33CD56420198F0600BAD39E /* demo_Prefix.pch */,
+				C33CD56320198EE400BAD39E /* Constants.h */,
 				C33CD52720198C4200BAD39E /* AppDelegate.h */,
 				C33CD52820198C4200BAD39E /* AppDelegate.m */,
 				C33CD52A20198C4200BAD39E /* ViewController.h */,
 				C33CD52B20198C4200BAD39E /* ViewController.m */,
+				C33CD55B20198E7700BAD39E /* Extention */,
 				C33CD53020198C4200BAD39E /* Assets.xcassets */,
 				C33CD53520198C4200BAD39E /* Info.plist */,
 				C33CD53620198C4200BAD39E /* main.m */,
@@ -124,6 +135,25 @@
 				C33CD54D20198C4200BAD39E /* Info.plist */,
 			);
 			path = PhotoSelectUITests;
+			sourceTree = "<group>";
+		};
+		C33CD55B20198E7700BAD39E /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD55C20198E7700BAD39E /* Category */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		C33CD55C20198E7700BAD39E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD55D20198E7700BAD39E /* UIImage+ImageWithColor.h */,
+				C33CD55E20198E7700BAD39E /* UINavigationBar+BackgroundColor.m */,
+				C33CD55F20198E7700BAD39E /* UIImage+ImageWithColor.m */,
+				C33CD56020198E7700BAD39E /* UINavigationBar+BackgroundColor.h */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33CD56220198E7700BAD39E /* UIImage+ImageWithColor.m in Sources */,
 				C33CD52C20198C4200BAD39E /* ViewController.m in Sources */,
 				C33CD53720198C4200BAD39E /* main.m in Sources */,
 				C33CD52920198C4200BAD39E /* AppDelegate.m in Sources */,
+				C33CD56120198E7700BAD39E /* UINavigationBar+BackgroundColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +438,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED7MB6N8JF;
+				GCC_PREFIX_HEADER = /Users/DWmude/PhotosSelect/PhotoSelect/PhotoSelect/demo_Prefix.pch;
 				INFOPLIST_FILE = PhotoSelect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.mude.PhotoSelect;
@@ -421,6 +454,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED7MB6N8JF;
+				GCC_PREFIX_HEADER = /Users/DWmude/PhotosSelect/PhotoSelect/PhotoSelect/demo_Prefix.pch;
 				INFOPLIST_FILE = PhotoSelect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.mude.PhotoSelect;

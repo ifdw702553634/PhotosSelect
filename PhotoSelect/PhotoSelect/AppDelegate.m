@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,53 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor=[UIColor whiteColor];
+    
+    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    self.window.rootViewController=navc;
+    [self.window makeKeyAndVisible];
+    
+    
+    //导航栏通用设置
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:THEME_COLOR] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc]init] ];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    //设置自定义返回按钮图片
+    [self setNaviBack];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor whiteColor],NSForegroundColorAttributeName,
+                                                          [UIFont boldSystemFontOfSize:18],
+                                                          NSFontAttributeName
+                                                          ,nil]];
+    
     // Override point for customization after application launch.
     return YES;
+    // Override point for customization after application launch.
 }
 
+/**
+ *  设置自定义返回按钮图片
+ */
+- (void)setNaviBack{
+    UINavigationBar * navigationBar = [UINavigationBar appearance];
+    //设置返回样式图片
+    UIImage *image = [UIImage imageNamed:@"arrow_white_left"];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    navigationBar.backIndicatorImage = image;
+    navigationBar.backIndicatorTransitionMaskImage = image;
+    UIOffset offset;
+    
+    //添加iOS11适配
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0) {
+        //
+    }else{
+        offset.horizontal = -500;
+        offset.vertical = -500;
+        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:offset forBarMetrics:UIBarMetricsDefault];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
