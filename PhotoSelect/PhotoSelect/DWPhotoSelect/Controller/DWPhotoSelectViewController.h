@@ -12,7 +12,6 @@
 
 @property NSString *navTitle;
 
-@property NSInteger maximumImg;
 @property NSInteger allowSelect;//用于记录可以选择的照片数量
 
 @property NSMutableArray<PHAsset *> *photoArr;

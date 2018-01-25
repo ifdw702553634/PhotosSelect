@@ -21,7 +21,6 @@ typedef NS_ENUM(NSInteger, PhotoType) {
 @property NSMutableArray<PHAsset *> *selectArr;
 @property PhotoType photoType;
 
-@property NSInteger maximumImg;
 @property NSInteger allowSelect;//用于记录可以选择的照片数量
 
 @end

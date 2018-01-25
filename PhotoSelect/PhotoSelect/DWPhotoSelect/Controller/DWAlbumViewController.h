@@ -13,7 +13,6 @@
 
 @property NSArray<PHAsset *>  *currentPhotoArr;
 
-@property NSInteger maximumImg;//可以上传的照片最大张数
 @property NSInteger allowSelect;//用于记录可以选择的照片数量
 
 @end

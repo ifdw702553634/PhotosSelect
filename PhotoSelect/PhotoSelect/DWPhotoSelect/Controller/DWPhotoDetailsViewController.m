@@ -256,8 +256,8 @@
         [self.selectBtn setImage: [UIImage imageNamed:@"photo_check"] forState:UIControlStateNormal];
         [_selectArr removeObjectAtIndex:number];
     }else{
-        if (_selectArr.count >= ((_allowSelect == 0)?_maximumImg:_allowSelect)) {
-            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"最多上传%ld张照片",(long)_maximumImg] preferredStyle:UIAlertControllerStyleAlert];
+        if (_selectArr.count >= _allowSelect) {
+            UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"最多再上传%ld张照片",(long)_allowSelect] preferredStyle:UIAlertControllerStyleAlert];
             [alertVC setDismissInterval:1.5f];
             [self presentViewController:alertVC animated:YES completion:nil];
         }else{

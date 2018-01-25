@@ -188,7 +188,6 @@ static NSString *kAlbumTableViewCell = @"kAlbumTableViewCell";
     vc.navTitle = dataArr[indexPath.row][@"albumTitle"];
     vc.photoArr = [dataArr[indexPath.row][@"photoArr"] mutableCopy];
     vc.selectArr = [_currentPhotoArr mutableCopy];
-    vc.maximumImg = _maximumImg;
     vc.allowSelect = _allowSelect;
     [self.navigationController pushViewController:vc animated:YES];
 }

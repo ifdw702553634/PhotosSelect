@@ -28,8 +28,17 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (_photoArr) {
+        DBG(@"%@", _photoArr);
+    }
+}
+
 - (void)album{
     DWAlbumViewController *vc = [[DWAlbumViewController alloc] init];
+    vc.currentPhotoArr = self.photoArr;
+    vc.allowSelect = 5;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

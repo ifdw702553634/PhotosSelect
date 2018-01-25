@@ -248,8 +248,8 @@ static NSString *kPhotoSelectCollectionViewCell = @"kPhotoSelectCollectionViewCe
             [weakCell.selectBtn setImage: [UIImage imageNamed:@"photo_nocheck"] forState:UIControlStateNormal];
             [_selectArr removeObjectAtIndex:number];
         }else{
-            if (_selectArr.count >= ((_allowSelect == 0)?_maximumImg:_allowSelect)) {
-                UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"最多上传%ld张照片",(long)_maximumImg] preferredStyle:UIAlertControllerStyleAlert];
+            if (_selectArr.count >= _allowSelect) {
+                UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"最多再上传%ld张照片",(long)_allowSelect] preferredStyle:UIAlertControllerStyleAlert];
                 [alertVC setDismissInterval:1.5f];
                 [self presentViewController:alertVC animated:YES completion:nil];
             }else{
@@ -285,7 +285,6 @@ static NSString *kPhotoSelectCollectionViewCell = @"kPhotoSelectCollectionViewCe
     vc.photoArr = [_photoArr mutableCopy];
     vc.currentIndex = indexPath.row;
     vc.photoType = AllPhotos;
-    vc.maximumImg = _maximumImg;
     vc.allowSelect = _allowSelect;
     [self.navigationController pushViewController:vc animated:YES];
 }
