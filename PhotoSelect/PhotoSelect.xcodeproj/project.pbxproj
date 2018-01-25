@@ -15,6 +15,25 @@
 		C33CD54C20198C4200BAD39E /* PhotoSelectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD54B20198C4200BAD39E /* PhotoSelectUITests.m */; };
 		C33CD56120198E7700BAD39E /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD55E20198E7700BAD39E /* UINavigationBar+BackgroundColor.m */; };
 		C33CD56220198E7700BAD39E /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD55F20198E7700BAD39E /* UIImage+ImageWithColor.m */; };
+		C33CD56A2019A6D900BAD39E /* DWAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5692019A6D900BAD39E /* DWAlbumViewController.m */; };
+		C33CD56D2019A78700BAD39E /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD56C2019A78700BAD39E /* AlbumTableViewCell.m */; };
+		C33CD5892019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5702019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C33CD58A2019ABB400BAD39E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5792019ABB400BAD39E /* ViewController+MASAdditions.m */; };
+		C33CD58B2019ABB400BAD39E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD57D2019ABB400BAD39E /* MASCompositeConstraint.m */; };
+		C33CD58C2019ABB400BAD39E /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD57E2019ABB400BAD39E /* MASConstraintMaker.m */; };
+		C33CD58D2019ABB400BAD39E /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD57F2019ABB400BAD39E /* MASLayoutConstraint.m */; };
+		C33CD58E2019ABB400BAD39E /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5802019ABB400BAD39E /* NSArray+MASAdditions.m */; };
+		C33CD58F2019ABB400BAD39E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5812019ABB400BAD39E /* View+MASAdditions.m */; };
+		C33CD5902019ABB400BAD39E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5842019ABB400BAD39E /* MASConstraint.m */; };
+		C33CD5912019ABB400BAD39E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5862019ABB400BAD39E /* MASViewConstraint.m */; };
+		C33CD5922019ABB400BAD39E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5872019ABB400BAD39E /* MASViewAttribute.m */; };
+		C33CD5932019ABB400BAD39E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C33CD5882019ABB400BAD39E /* Info.plist */; };
+		C33CD5962019B7E100BAD39E /* DWPhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5952019B7E100BAD39E /* DWPhotoSelectViewController.m */; };
+		C33CD5992019B86A00BAD39E /* PhotoSelectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5982019B86A00BAD39E /* PhotoSelectCollectionViewCell.m */; };
+		C33CD59C2019BB4A00BAD39E /* UIAlertController+AutoHide.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD59B2019BB4A00BAD39E /* UIAlertController+AutoHide.m */; };
+		C33CD59F2019C61D00BAD39E /* DWPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD59E2019C61D00BAD39E /* DWPhotoDetailsViewController.m */; };
+		C33CD5A22019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5A12019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m */; };
+		C33CD5A52019C6E800BAD39E /* PhotoDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5A32019C6E700BAD39E /* PhotoDetailCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +74,48 @@
 		C33CD56020198E7700BAD39E /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
 		C33CD56320198EE400BAD39E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		C33CD56420198F0600BAD39E /* demo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo_Prefix.pch; sourceTree = "<group>"; };
+		C33CD5682019A6D900BAD39E /* DWAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAlbumViewController.h; sourceTree = "<group>"; };
+		C33CD5692019A6D900BAD39E /* DWAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWAlbumViewController.m; sourceTree = "<group>"; };
+		C33CD56B2019A78700BAD39E /* AlbumTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
+		C33CD56C2019A78700BAD39E /* AlbumTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewCell.m; sourceTree = "<group>"; };
+		C33CD56F2019ABB400BAD39E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		C33CD5702019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		C33CD5712019ABB400BAD39E /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		C33CD5722019ABB400BAD39E /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		C33CD5732019ABB400BAD39E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C33CD5742019ABB400BAD39E /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		C33CD5752019ABB400BAD39E /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		C33CD5762019ABB400BAD39E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		C33CD5772019ABB400BAD39E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		C33CD5782019ABB400BAD39E /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		C33CD5792019ABB400BAD39E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		C33CD57A2019ABB400BAD39E /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		C33CD57B2019ABB400BAD39E /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		C33CD57C2019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		C33CD57D2019ABB400BAD39E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		C33CD57E2019ABB400BAD39E /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		C33CD57F2019ABB400BAD39E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		C33CD5802019ABB400BAD39E /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		C33CD5812019ABB400BAD39E /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		C33CD5822019ABB400BAD39E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C33CD5832019ABB400BAD39E /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		C33CD5842019ABB400BAD39E /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		C33CD5852019ABB400BAD39E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		C33CD5862019ABB400BAD39E /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		C33CD5872019ABB400BAD39E /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		C33CD5882019ABB400BAD39E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33CD5942019B7E100BAD39E /* DWPhotoSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWPhotoSelectViewController.h; sourceTree = "<group>"; };
+		C33CD5952019B7E100BAD39E /* DWPhotoSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWPhotoSelectViewController.m; sourceTree = "<group>"; };
+		C33CD5972019B86A00BAD39E /* PhotoSelectCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSelectCollectionViewCell.h; sourceTree = "<group>"; };
+		C33CD5982019B86A00BAD39E /* PhotoSelectCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectCollectionViewCell.m; sourceTree = "<group>"; };
+		C33CD59A2019BB4900BAD39E /* UIAlertController+AutoHide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+AutoHide.h"; sourceTree = "<group>"; };
+		C33CD59B2019BB4A00BAD39E /* UIAlertController+AutoHide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+AutoHide.m"; sourceTree = "<group>"; };
+		C33CD59D2019C61D00BAD39E /* DWPhotoDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWPhotoDetailsViewController.h; sourceTree = "<group>"; };
+		C33CD59E2019C61D00BAD39E /* DWPhotoDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWPhotoDetailsViewController.m; sourceTree = "<group>"; };
+		C33CD5A02019C69600BAD39E /* PhotoSelectCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSelectCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		C33CD5A12019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		C33CD5A32019C6E700BAD39E /* PhotoDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailCollectionViewCell.m; sourceTree = "<group>"; };
+		C33CD5A42019C6E800BAD39E /* PhotoDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailCollectionViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +166,17 @@
 		C33CD52620198C4200BAD39E /* PhotoSelect */ = {
 			isa = PBXGroup;
 			children = (
-				C33CD56420198F0600BAD39E /* demo_Prefix.pch */,
-				C33CD56320198EE400BAD39E /* Constants.h */,
 				C33CD52720198C4200BAD39E /* AppDelegate.h */,
 				C33CD52820198C4200BAD39E /* AppDelegate.m */,
 				C33CD52A20198C4200BAD39E /* ViewController.h */,
 				C33CD52B20198C4200BAD39E /* ViewController.m */,
+				C33CD5652019A6B200BAD39E /* DWPhotoSelect */,
 				C33CD55B20198E7700BAD39E /* Extention */,
 				C33CD53020198C4200BAD39E /* Assets.xcassets */,
 				C33CD53520198C4200BAD39E /* Info.plist */,
 				C33CD53620198C4200BAD39E /* main.m */,
+				C33CD56420198F0600BAD39E /* demo_Prefix.pch */,
+				C33CD56320198EE400BAD39E /* Constants.h */,
 			);
 			path = PhotoSelect;
 			sourceTree = "<group>";
@@ -148,12 +210,85 @@
 		C33CD55C20198E7700BAD39E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C33CD59A2019BB4900BAD39E /* UIAlertController+AutoHide.h */,
+				C33CD59B2019BB4A00BAD39E /* UIAlertController+AutoHide.m */,
 				C33CD55D20198E7700BAD39E /* UIImage+ImageWithColor.h */,
-				C33CD55E20198E7700BAD39E /* UINavigationBar+BackgroundColor.m */,
 				C33CD55F20198E7700BAD39E /* UIImage+ImageWithColor.m */,
 				C33CD56020198E7700BAD39E /* UINavigationBar+BackgroundColor.h */,
+				C33CD55E20198E7700BAD39E /* UINavigationBar+BackgroundColor.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		C33CD5652019A6B200BAD39E /* DWPhotoSelect */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD56E2019ABB400BAD39E /* Masonry */,
+				C33CD5662019A6B200BAD39E /* Controller */,
+				C33CD5672019A6B200BAD39E /* View */,
+			);
+			path = DWPhotoSelect;
+			sourceTree = "<group>";
+		};
+		C33CD5662019A6B200BAD39E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD5682019A6D900BAD39E /* DWAlbumViewController.h */,
+				C33CD5692019A6D900BAD39E /* DWAlbumViewController.m */,
+				C33CD5942019B7E100BAD39E /* DWPhotoSelectViewController.h */,
+				C33CD5952019B7E100BAD39E /* DWPhotoSelectViewController.m */,
+				C33CD59D2019C61D00BAD39E /* DWPhotoDetailsViewController.h */,
+				C33CD59E2019C61D00BAD39E /* DWPhotoDetailsViewController.m */,
+				C33CD5A02019C69600BAD39E /* PhotoSelectCollectionViewFlowLayout.h */,
+				C33CD5A12019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C33CD5672019A6B200BAD39E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD56B2019A78700BAD39E /* AlbumTableViewCell.h */,
+				C33CD56C2019A78700BAD39E /* AlbumTableViewCell.m */,
+				C33CD5972019B86A00BAD39E /* PhotoSelectCollectionViewCell.h */,
+				C33CD5982019B86A00BAD39E /* PhotoSelectCollectionViewCell.m */,
+				C33CD5A42019C6E800BAD39E /* PhotoDetailCollectionViewCell.h */,
+				C33CD5A32019C6E700BAD39E /* PhotoDetailCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C33CD56E2019ABB400BAD39E /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD56F2019ABB400BAD39E /* MASCompositeConstraint.h */,
+				C33CD5702019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.m */,
+				C33CD5712019ABB400BAD39E /* MASConstraint+Private.h */,
+				C33CD5722019ABB400BAD39E /* MASLayoutConstraint.h */,
+				C33CD5732019ABB400BAD39E /* NSArray+MASShorthandAdditions.h */,
+				C33CD5742019ABB400BAD39E /* MASConstraintMaker.h */,
+				C33CD5752019ABB400BAD39E /* View+MASAdditions.h */,
+				C33CD5762019ABB400BAD39E /* NSArray+MASAdditions.h */,
+				C33CD5772019ABB400BAD39E /* MASUtilities.h */,
+				C33CD5782019ABB400BAD39E /* MASViewAttribute.h */,
+				C33CD5792019ABB400BAD39E /* ViewController+MASAdditions.m */,
+				C33CD57A2019ABB400BAD39E /* MASViewConstraint.h */,
+				C33CD57B2019ABB400BAD39E /* MASConstraint.h */,
+				C33CD57C2019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.h */,
+				C33CD57D2019ABB400BAD39E /* MASCompositeConstraint.m */,
+				C33CD57E2019ABB400BAD39E /* MASConstraintMaker.m */,
+				C33CD57F2019ABB400BAD39E /* MASLayoutConstraint.m */,
+				C33CD5802019ABB400BAD39E /* NSArray+MASAdditions.m */,
+				C33CD5812019ABB400BAD39E /* View+MASAdditions.m */,
+				C33CD5822019ABB400BAD39E /* View+MASShorthandAdditions.h */,
+				C33CD5832019ABB400BAD39E /* Masonry.h */,
+				C33CD5842019ABB400BAD39E /* MASConstraint.m */,
+				C33CD5852019ABB400BAD39E /* ViewController+MASAdditions.h */,
+				C33CD5862019ABB400BAD39E /* MASViewConstraint.m */,
+				C33CD5872019ABB400BAD39E /* MASViewAttribute.m */,
+				C33CD5882019ABB400BAD39E /* Info.plist */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33CD5932019ABB400BAD39E /* Info.plist in Resources */,
 				C33CD53120198C4200BAD39E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,9 +425,27 @@
 			files = (
 				C33CD56220198E7700BAD39E /* UIImage+ImageWithColor.m in Sources */,
 				C33CD52C20198C4200BAD39E /* ViewController.m in Sources */,
+				C33CD58E2019ABB400BAD39E /* NSArray+MASAdditions.m in Sources */,
+				C33CD5A22019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m in Sources */,
 				C33CD53720198C4200BAD39E /* main.m in Sources */,
+				C33CD5922019ABB400BAD39E /* MASViewAttribute.m in Sources */,
 				C33CD52920198C4200BAD39E /* AppDelegate.m in Sources */,
+				C33CD58D2019ABB400BAD39E /* MASLayoutConstraint.m in Sources */,
+				C33CD59F2019C61D00BAD39E /* DWPhotoDetailsViewController.m in Sources */,
+				C33CD58F2019ABB400BAD39E /* View+MASAdditions.m in Sources */,
+				C33CD5992019B86A00BAD39E /* PhotoSelectCollectionViewCell.m in Sources */,
+				C33CD58B2019ABB400BAD39E /* MASCompositeConstraint.m in Sources */,
+				C33CD56D2019A78700BAD39E /* AlbumTableViewCell.m in Sources */,
+				C33CD58A2019ABB400BAD39E /* ViewController+MASAdditions.m in Sources */,
+				C33CD5A52019C6E800BAD39E /* PhotoDetailCollectionViewCell.m in Sources */,
 				C33CD56120198E7700BAD39E /* UINavigationBar+BackgroundColor.m in Sources */,
+				C33CD5962019B7E100BAD39E /* DWPhotoSelectViewController.m in Sources */,
+				C33CD56A2019A6D900BAD39E /* DWAlbumViewController.m in Sources */,
+				C33CD58C2019ABB400BAD39E /* MASConstraintMaker.m in Sources */,
+				C33CD5892019ABB400BAD39E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				C33CD5902019ABB400BAD39E /* MASConstraint.m in Sources */,
+				C33CD5912019ABB400BAD39E /* MASViewConstraint.m in Sources */,
+				C33CD59C2019BB4A00BAD39E /* UIAlertController+AutoHide.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
