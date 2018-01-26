@@ -34,6 +34,8 @@
 		C33CD59F2019C61D00BAD39E /* DWPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD59E2019C61D00BAD39E /* DWPhotoDetailsViewController.m */; };
 		C33CD5A22019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5A12019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m */; };
 		C33CD5A52019C6E800BAD39E /* PhotoDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD5A32019C6E700BAD39E /* PhotoDetailCollectionViewCell.m */; };
+		C37E986B201ACD950065622A /* DWPhotoSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = C37E986A201ACD950065622A /* DWPhotoSelectView.m */; };
+		C37E9878201AD95B0065622A /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C37E9877201AD95B0065622A /* PhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,10 @@
 		C33CD5A12019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		C33CD5A32019C6E700BAD39E /* PhotoDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailCollectionViewCell.m; sourceTree = "<group>"; };
 		C33CD5A42019C6E800BAD39E /* PhotoDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailCollectionViewCell.h; sourceTree = "<group>"; };
+		C37E9869201ACD950065622A /* DWPhotoSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWPhotoSelectView.h; sourceTree = "<group>"; };
+		C37E986A201ACD950065622A /* DWPhotoSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWPhotoSelectView.m; sourceTree = "<group>"; };
+		C37E9876201AD95B0065622A /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		C37E9877201AD95B0065622A /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +229,10 @@
 		C33CD5652019A6B200BAD39E /* DWPhotoSelect */ = {
 			isa = PBXGroup;
 			children = (
+				C37E9869201ACD950065622A /* DWPhotoSelectView.h */,
+				C37E986A201ACD950065622A /* DWPhotoSelectView.m */,
+				C37E9876201AD95B0065622A /* PhotoCollectionViewCell.h */,
+				C37E9877201AD95B0065622A /* PhotoCollectionViewCell.m */,
 				C33CD56E2019ABB400BAD39E /* Masonry */,
 				C33CD5662019A6B200BAD39E /* Controller */,
 				C33CD5672019A6B200BAD39E /* View */,
@@ -424,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33CD56220198E7700BAD39E /* UIImage+ImageWithColor.m in Sources */,
+				C37E9878201AD95B0065622A /* PhotoCollectionViewCell.m in Sources */,
 				C33CD52C20198C4200BAD39E /* ViewController.m in Sources */,
 				C33CD58E2019ABB400BAD39E /* NSArray+MASAdditions.m in Sources */,
 				C33CD5A22019C69700BAD39E /* PhotoSelectCollectionViewFlowLayout.m in Sources */,
@@ -437,6 +448,7 @@
 				C33CD58B2019ABB400BAD39E /* MASCompositeConstraint.m in Sources */,
 				C33CD56D2019A78700BAD39E /* AlbumTableViewCell.m in Sources */,
 				C33CD58A2019ABB400BAD39E /* ViewController+MASAdditions.m in Sources */,
+				C37E986B201ACD950065622A /* DWPhotoSelectView.m in Sources */,
 				C33CD5A52019C6E800BAD39E /* PhotoDetailCollectionViewCell.m in Sources */,
 				C33CD56120198E7700BAD39E /* UINavigationBar+BackgroundColor.m in Sources */,
 				C33CD5962019B7E100BAD39E /* DWPhotoSelectViewController.m in Sources */,

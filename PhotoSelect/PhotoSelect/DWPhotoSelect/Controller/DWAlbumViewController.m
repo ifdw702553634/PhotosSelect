@@ -184,11 +184,15 @@ static NSString *kAlbumTableViewCell = @"kAlbumTableViewCell";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    __weak DWAlbumViewController *weakSelf = self;
     DWPhotoSelectViewController *vc = [[DWPhotoSelectViewController alloc] init];
     vc.navTitle = dataArr[indexPath.row][@"albumTitle"];
     vc.photoArr = [dataArr[indexPath.row][@"photoArr"] mutableCopy];
     vc.selectArr = [_currentPhotoArr mutableCopy];
     vc.allowSelect = _allowSelect;
+    vc.photoBlock = ^(NSArray *arr){
+        weakSelf.albumBlock(arr);
+    };
     [self.navigationController pushViewController:vc animated:YES];
 }
 

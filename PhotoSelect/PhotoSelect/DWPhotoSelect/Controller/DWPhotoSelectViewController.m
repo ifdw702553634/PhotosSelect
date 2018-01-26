@@ -156,28 +156,24 @@ static NSString *kPhotoSelectCollectionViewCell = @"kPhotoSelectCollectionViewCe
     }];
 }
 - (void)sendPhoto:(id)sender {
-    for (UIViewController *controller in self.navigationController.viewControllers) {
-//        if ([controller isKindOfClass:[TroubleDetailViewController class]]) {
-//            TroubleDetailViewController *revise =(TroubleDetailViewController *)controller;
-//            revise.photoArr = [_selectArr mutableCopy];
-//            [self.navigationController popToViewController:revise animated:YES];
-//        }
-    }
+    self.photoBlock(_selectArr);
+    NSArray *vcs=self.navigationController.viewControllers;
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:vcs.count-3] animated:YES];
 }
 - (void)photoDetail:(id)sender {
+    __weak DWPhotoSelectViewController *weakSelf = self;
     DWPhotoDetailsViewController *vc = [[DWPhotoDetailsViewController alloc] init];
     vc.selectArr = _selectArr;
     vc.photoType = SelectPhotos;
+    vc.detailBlock = ^(NSArray *arr){
+        weakSelf.photoBlock(arr);
+    };
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)cancelClick{
-    for (UIViewController *controller in self.navigationController.viewControllers) {
-//        if ([controller isKindOfClass:[TroubleDetailViewController class]]) {
-//            TroubleDetailViewController *revise =(TroubleDetailViewController *)controller;
-//            [self.navigationController popToViewController:revise animated:YES];
-//        }
-    }
+    NSArray *vcs=self.navigationController.viewControllers;
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:vcs.count-3] animated:YES];
 }
 #pragma mark -- UICollectionViewDataSource
 

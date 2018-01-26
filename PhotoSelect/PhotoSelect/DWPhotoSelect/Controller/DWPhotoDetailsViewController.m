@@ -231,13 +231,9 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)completeBtnClick:(id)sender {
-    for (UIViewController *controller in self.navigationController.viewControllers) {
-//        if ([controller isKindOfClass:[TroubleDetailViewController class]]) {
-//            TroubleDetailViewController *revise =(TroubleDetailViewController *)controller;
-//            revise.photoArr = [_selectArr mutableCopy];
-//            [self.navigationController popToViewController:revise animated:YES];
-//        }
-    }
+    self.detailBlock(_selectArr);
+    NSArray *vcs=self.navigationController.viewControllers;
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:vcs.count-4] animated:YES];
 }
 
 

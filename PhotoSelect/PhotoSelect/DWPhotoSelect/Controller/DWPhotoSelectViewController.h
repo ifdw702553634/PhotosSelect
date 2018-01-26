@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^PhotoBlock)(NSArray *photoArr);
+
 @interface DWPhotoSelectViewController : UIViewController
 
 @property NSString *navTitle;
@@ -16,5 +18,7 @@
 
 @property NSMutableArray<PHAsset *> *photoArr;
 @property NSMutableArray<PHAsset *> *selectArr;
+
+@property (nonatomic, copy) PhotoBlock photoBlock;
 
 @end

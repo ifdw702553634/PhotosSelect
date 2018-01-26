@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^DetailBlock)(NSArray *photoArr);
+
 typedef NS_ENUM(NSInteger, PhotoType) {
     AllPhotos = 1,
     SelectPhotos = 2,
@@ -22,5 +24,7 @@ typedef NS_ENUM(NSInteger, PhotoType) {
 @property PhotoType photoType;
 
 @property NSInteger allowSelect;//用于记录可以选择的照片数量
+
+@property (nonatomic, copy) DetailBlock detailBlock;
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "DWAlbumViewController.h"
+#import "DWPhotoSelectView.h"
+
 
 @interface ViewController ()
 
@@ -20,28 +21,11 @@
     
     self.title = @"Test";
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 50, SCREEN_WIDTH-20, 55)];
-    btn.backgroundColor = [UIColor lightGrayColor];
-    btn.titleLabel.text = @"相册";
-    [btn addTarget:self action:@selector(album) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    DWPhotoSelectView *photoView = [[DWPhotoSelectView alloc] initWithFrame:CGRectMake(21, 21, SCREEN_WIDTH-42, SCREEN_HEIGHT-21) withItemSize:CGSizeMake((SCREEN_WIDTH-21*2-37*2)/3.0f, (SCREEN_WIDTH-21*2-37*2)/3.0f) withMinimumLineSpacing:10.f withMinimumInteritemSpacing:37.f withAllowSelect:5];
+    [self.view addSubview:photoView];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    if (_photoArr) {
-        DBG(@"%@", _photoArr);
-    }
-}
-
-- (void)album{
-    DWAlbumViewController *vc = [[DWAlbumViewController alloc] init];
-    vc.currentPhotoArr = self.photoArr;
-    vc.allowSelect = 5;
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
